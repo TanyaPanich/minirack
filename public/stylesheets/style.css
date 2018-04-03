@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+.doohickey {
+  background-color: lightblue;
+  margin: 20px;
+  padding: 50px;
+}

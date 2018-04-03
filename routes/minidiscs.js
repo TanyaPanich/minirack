@@ -1,6 +1,14 @@
 const express = require('express')
 const router = express.Router()
 const knex = require('../knex')
+
+// --- FOR TEMPLATES BELOW
+
+// the page for making a new minidisc
+router.get('/new', (req, res, next) => {
+  res.render('minidiscs', {})
+})
+//------------------------------------
 // READ ALL records for this table
 // router.get('/', (req, res, next) => {
 //   res.send('ALL RECORDS')
@@ -97,4 +105,6 @@ router.delete('/:id', function(req, res, next) {
       next(err)
     })
 })
+
+
 module.exports = router
